@@ -1,6 +1,6 @@
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
-from typing import Any
 
 
 class FabricBuilder(ABC):
@@ -35,7 +35,7 @@ class TruckBuilder(FabricBuilder):
         self._truck.wheels += 2
 
     def add_armor(self):
-        _dict = self._truck.__dict__["armor"] = 100
+        self._truck.__dict__["armor"] = 100
 
 
 class Truck:
