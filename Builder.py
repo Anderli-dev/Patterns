@@ -35,10 +35,10 @@ class TruckBuilder(FabricBuilder):
         self._truck.wheels += 2
 
     def add_armor(self):
-        self._truck.other_properties["armor"] = True
+        _dict = self._truck.__dict__["armor"] = 100
 
 
-class Truck():
+class Truck:
     def __init__(self):
         self.wheels = 4
         self.other_properties = {}
