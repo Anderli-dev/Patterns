@@ -33,6 +33,7 @@ class Adapter:
         adapted.hull = c.hull
         return adapted
 
+
 if __name__ == "__main__":
 
     plane = Plane()
