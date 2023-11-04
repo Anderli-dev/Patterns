@@ -36,7 +36,7 @@ class Mediator:
     def build(self, sender: object, build_type):
         if build_type == 0:
             # Разом з машиною будуються і інші транспортні засоби
-            # Тобто взаємодія відбувається зерез медіатор а не напряму
+            # Тобто взаємодія відбувається зерез посередника а не напряму
             print("Mediator build")
             self.plane_factory.build_plane()
             print("\n", end="")
